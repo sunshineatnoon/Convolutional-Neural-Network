@@ -35,8 +35,8 @@ labels = labels(1:6000);
 cnn.layers = {
     struct('type', 'c', 'numFilters', 6, 'filterDim', 5) %convolution layer
     struct('type', 'p', 'poolDim', 2) %sub sampling layer
-    %struct('type', 'c', 'numFilters', 8, 'filterDim', 5) %convolution layer
-    %struct('type', 'p', 'poolDim', 2) %subsampling layer
+    struct('type', 'c', 'numFilters', 8, 'filterDim', 5) %convolution layer
+    struct('type', 'p', 'poolDim', 2) %subsampling layer
 };
 
 
